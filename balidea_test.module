@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Balidea Test module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function balidea_test_theme($existing, $type, $theme, $path) {
+  return [
+    'balidea_test_template' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for the html.html.twig template.
+ */
+function balidea_test_preprocess_html(&$variables) {
+  // Add body class based on current content type.
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $variables['attributes']['class'][] = $node->bundle();
+  }
+}

@@ -1,0 +1,14 @@
+name: Balidea Test
+description: 'Balidea Test module'
+package: Balidea
+
+type: module
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - drupal:config_translation
+
+configure: balidea_test.admin_config_balidea
+
+'interface translation project': balidea_test
+'interface translation server pattern': modules/custom/balidea_test/translations/%language.po

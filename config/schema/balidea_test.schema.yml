@@ -1,0 +1,10 @@
+balidea_test.settings:
+  type: config_object
+  label: 'Configuration translation for Balidea Test.'
+  mapping:
+    balidea_text:
+      type: text_format
+      label: 'Text'
+    balidea_number:
+      type: integer
+      label: 'Integer number'

@@ -1,0 +1,5 @@
+balidea_test.admin_config_balidea:
+  title: 'Balidea Settings'
+  base_route_name: balidea_test.admin_config_balidea
+  names:
+    - balidea_test.settings

@@ -1,0 +1,4 @@
+balidea_test.admin_settings_tab:
+  route_name: balidea_test.admin_config_balidea
+  title: 'Settings'
+  base_route: balidea_test.admin_config_balidea

@@ -1,0 +1,15 @@
+balidea_test.admin_config_balidea:
+  path: '/admin/config/balidea'
+  defaults:
+    _title: 'Balidea Settings'
+    _form: 'Drupal\balidea_test\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+balidea_test.display_data:
+  path: '/balidea-info'
+  defaults:
+    _title: 'Balidea Info'
+    _controller: '\Drupal\balidea_test\Controller\BalideaTestController::build'
+  requirements:
+    _role: 'authenticated'

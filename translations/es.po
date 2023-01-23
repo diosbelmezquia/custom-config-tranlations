@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: balidea_test\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Integer number"
+msgstr "Número entero"
+
+msgid "Only integers numbers are allowed"
+msgstr "Solo números enteros son permitidos"
+
+msgid "Information text"
+msgstr "Texto informativo"
+
+msgid "No data to display"
+msgstr "No hay datos para mostrar"

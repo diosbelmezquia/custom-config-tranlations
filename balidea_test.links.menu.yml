@@ -1,0 +1,11 @@
+balidea_test.admin_config_balidea:
+  title: Balidea settings
+  parent: system.admin_config
+  route_name: balidea_test.admin_config_balidea
+  weight: 100
+
+balidea_test.info:
+  title: Balidea show info
+  route_name: balidea_test.display_data
+  menu_name: main
+  weight: 99

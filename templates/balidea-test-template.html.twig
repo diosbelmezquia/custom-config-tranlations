@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Theme for Balidea test module.
+ *
+ * Available variables:
+ * - text: The text ckeditor to show.
+ * - number: The number to show.
+ */
+#}
+
+{%
+  set classes = [
+    'balidea_test-container',
+  ]
+%}
+
+{% set text = data.text %}
+{% set number = data.number %}
+
+{% if text or number %}
+  <div{{ attributes.addClass(classes) }}>
+
+    {% if text %}
+      <h2>{{ 'Information text'|t }}</h2>
+      {{ text|raw }}
+    {% endif %}
+
+    {% if number %}
+      <h2>{{ 'Integer number'|t }}</h2>
+      <h3>{{ number }}</h3>
+    {% endif %}
+
+  </div>
+{% else %}
+  <h2>{{ 'No data to display'|t }}</h2>
+{% endif %}
